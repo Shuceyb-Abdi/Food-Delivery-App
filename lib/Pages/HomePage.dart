@@ -2,6 +2,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:flutter/material.dart';
 import '../Widgets/AppBarWidget.dart';
 import '../Widgets/CategoriesWidget.dart';
+import '../Widgets/NewestItemsWidget.dart';
 import '../Widgets/PopularItemsWidget.dart';
 
 
@@ -94,6 +95,22 @@ class HomePage extends StatelessWidget{
 
           //Popular Items widget
           PopularItemsWidget(),
+
+          //Newest zitems
+
+               Padding(
+            padding: EdgeInsets.only(top: 20, left: 10),
+          child: Text(
+            "Newest",
+            style: TextStyle(
+              fontWeight: FontWeight.bold,
+              fontSize: 20,
+            ),
+          ),
+          ),
+
+          //Newest Item Widget
+          NewestItemsWidget(),
       ],
     ),
     );
